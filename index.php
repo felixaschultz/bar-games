@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/mobile.css">
+    <script src="manifest.webmanifest"></script>
 </head>
 <body>
     <header class="main-header">
