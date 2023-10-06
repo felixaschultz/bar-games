@@ -1,3 +1,13 @@
+<?php
+    session_start();
+    $gameId = rand(100000000, 9999999999);
+
+    if(!isset($_SESSION["gameId"])){
+        $_SESSION["gameId"] = $gameId;
+    }
+
+    echo $_SESSION["gameId"] ;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
