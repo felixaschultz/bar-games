@@ -1,0 +1,4 @@
+<!-- Game Selector screen -->
+<?php
+
+?>

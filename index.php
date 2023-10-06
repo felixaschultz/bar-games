@@ -13,10 +13,12 @@
 
     </header>
     <main class="main-content">
-
+        <?php
+            include("pages/login.php");
+        ?>
     </main>
     <footer class="main-footer">
-        
+
     </footer>
     <script src="js/websocket.js"></script>
     <script src="js/app.js"></script>
