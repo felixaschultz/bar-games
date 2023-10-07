@@ -61,6 +61,7 @@
     position: relative;
     display: grid;
     place-content: center;
+    height: 300px;
 }
 
 .game__item{
@@ -74,4 +75,13 @@
 
 .game__item--1{
     z-index: 1;
+}
+
+.item-drop{
+    border: 1px dashed #ccc;
+    height: 300px;
+}
+
+.item-drop .game__item{
+    display: none;
 }

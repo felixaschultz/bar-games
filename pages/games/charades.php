@@ -46,6 +46,6 @@
                 }
             }
             ?>
-            <section ondrop="drop(e)" ondragover="allowDrop(e)"></section>
         </section>
+        <section class="item-drop" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
 </main>

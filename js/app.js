@@ -19,11 +19,14 @@ const items = document.querySelectorAll('.game__item');
 
 function drag(e){
     console.log('drag:', e, e.target);
-    e.target.classList.add('dragging');
+    e.dataTransfer.setData("Text", e.target.id);
+    
 }
 
-function drop(e){
-    console.log('drop:', e, e.target);
+function drop(ev){
+    let data = ev.dataTransfer.getData("Text");
+    ev.target.appendChild(document.getElementById(data));
+    ev.preventDefault();
 }
 
 function allowDrop(e){
