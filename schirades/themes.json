@@ -8,10 +8,33 @@
         "items": [
             {
                 "id": 1,
-                "title": "",
+                "title": "Spectre",
                 "description": "",
                 "forbidden": [
-
+                    "James Bond",
+                    "M",
+                    "Q",
+                    "Miss Moneypenny",
+                    "Moneypenny",
+                    "Spectre",
+                    "Skyfall",
+                    "Pierce Brpsnan",
+                    "Daniel Craig",
+                    "Sean Connery",
+                    "Roger Moore",
+                    "George Lazenby",
+                    "Timothy Dalton",
+                    "Casino Royale"
+                ],
+                "link": ""
+            },
+            {
+                "id": 2,
+                "title": "Air Force One",
+                "description": "",
+                "forbidden": [
+                    "Harrioson Ford",
+                    "Air Force One"
                 ],
                 "link": ""
             }
@@ -29,7 +52,12 @@
                 "title": "Friends",
                 "description": "",
                 "forbidden": [
-
+                    "Chandler Bing",
+                    "Joey Tribbiani",
+                    "Rachel Green",
+                    "Monica Geller",
+                    "Phoebe Buffay",
+                    "Ross Geller"
                 ],
                 "link": ""
             }

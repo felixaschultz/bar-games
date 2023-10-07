@@ -5,8 +5,9 @@
     if(!isset($_SESSION["gameId"])){
         $_SESSION["gameId"] = $gameId;
     }
-
-    echo $_SESSION["gameId"] ;
+    else{
+        $gameId = $_SESSION["gameId"];
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
