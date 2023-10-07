@@ -26,7 +26,7 @@
         }
         if(isset($_GET["theme"]) && isset($_GET["start"]) && $_GET["start"] == "true"){
         ?>
-        <section class="timer"></section>
+        <section class="timer">60</section>
         <div class="grid g-3">
             <section class="item-drop success" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
             <section class="container">
