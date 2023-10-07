@@ -25,14 +25,14 @@
             }
         }
         ?>
-        <section class="grid">
+        <section class="container">
             <?php
             if(isset($_GET["theme"])){
                 foreach($themes as $theme){
                     if($theme["theme"] == $_GET["theme"]){
                         foreach($theme["items"] as $word){
-                            echo "<article>";
-                            echo "<p>" . $word["title"] . "</p>";
+                            echo "<article draggable='true' ondragstart='drag(event)' class='game__item game__item--". $word["id"] ."' id='". $word["id"] ."'>";
+                            echo "<h2>" . $word["title"] . "</h2>";
                             echo "<p>" . $word["description"] . "</p>";
                             echo "<p>Forbidden Words</p>";
                             echo "<ul>";

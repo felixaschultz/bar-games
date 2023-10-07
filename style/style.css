@@ -56,3 +56,22 @@
     border-radius: 10px;
     padding: 35px;
 }
+
+.container{
+    position: relative;
+    display: grid;
+    place-content: center;
+}
+
+.game__item{
+    background-color: #414141;
+    position: absolute;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    width: 350px;
+}
+
+.game__item--1{
+    z-index: 1;
+}

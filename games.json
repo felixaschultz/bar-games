@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "name": "Schirades",
-        "description": "Schirades is a game where you have to guess the word that is being acted out by the other player.",
+        "name": "Charades",
+        "description": "Charades is a game where you have to guess the word that is being acted out by the other player.",
         "image": "https://via.placeholder.com/150",
-        "uri": "schirades"
+        "uri": "charades"
     },
     {
         "id": 2,

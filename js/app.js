@@ -13,4 +13,10 @@ function updateTiltStatus(event) {
 }
 
 // Listen for device orientation events
-window.addEventListener('deviceorientation', updateTiltStatus);  
+window.addEventListener('deviceorientation', updateTiltStatus);
+
+const items = document.querySelectorAll('.game__item');
+
+function drag(e){
+    console.log('drag:', e, e.target);
+}
