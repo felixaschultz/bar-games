@@ -97,3 +97,11 @@
     width: 100%;
     display: none;
 }
+
+/* Timer */
+.timer{
+    font-size: 2rem;
+    margin: 10px 0;
+    color: var(--warning-color);
+    text-align: right;
+}
