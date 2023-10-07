@@ -22,7 +22,7 @@ const success = (localStorage.getItem("success") != null) ? JSON.parse(localStor
 let interval;
 if(new URLSearchParams(window.location.search).get("start") === 'true'){
     console.log("Start the game");
-    let count = 60;
+    let count = 61;
     interval = setInterval(function(){
         count--;
         timer.innerHTML = count;
