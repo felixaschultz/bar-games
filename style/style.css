@@ -78,8 +78,12 @@
 }
 
 .item-drop{
-    /* border: 1px dashed #ccc; */
+    border: 1px dashed #ccc;
     height: 300px;
+}
+
+.item-drop.fail{
+    border-color: var(--danger-color);
 }
 
 .item-drop .game__item{
