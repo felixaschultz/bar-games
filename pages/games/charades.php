@@ -53,7 +53,7 @@
             </section>
             <section class="item-drop fail" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
         </div>
-        <?php }else{
+        <?php }else if(isset($_GET["theme"]) && !isset($_GET["start"])){
             echo "<a href='?game=".$_GET["game"]."&theme=".$_GET["theme"]."&start=true'>Start</a>";
         } ?>
 </main>
