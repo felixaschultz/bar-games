@@ -86,6 +86,7 @@
 .item-drop{
     border: 1px dashed #03a000;
     height: 300px;
+    position: relative;
 }
 
 .item-drop.fail{
@@ -93,5 +94,6 @@
 }
 
 .item-drop .game__item{
+    width: 100%;
     display: none;
 }
