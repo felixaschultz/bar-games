@@ -40,19 +40,23 @@ function drop(ev){
     ev.target.appendChild(document.getElementById(data));
 
     if(document.querySelector('.container').children.length === 0){
-        const fails = JSON.parse(localStorage.getItem("fail")).length;
-        const success = JSON.parse(localStorage.getItem("success")).length;
+        const fails = (localStorage.getItem("fail") != null) ? JSON.parse(localStorage.getItem("fail")).length : 0;
+        const success = (localStorage.getItem("success") != null) ? JSON.parse(localStorage.getItem("success")).length : 0;
 
         if(fails > success){
             document.querySelector('.container').innerHTML = '<h1>Game Over</h1>';
+            document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
         }
 
         if(success > fails){
             document.querySelector('.container').innerHTML = '<h1>Game Won</h1>';
+            document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
         }
 
         if(success === fails){
             document.querySelector('.container').innerHTML = '<h1>Game Draw</h1>';
+            document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+
         }
     }
 
@@ -62,4 +66,10 @@ function drop(ev){
 function allowDrop(e){
     e.preventDefault();
     
+}
+
+function playAgain(){
+    localStorage.removeItem('fail');
+    localStorage.removeItem('success');
+    location.reload();
 }
