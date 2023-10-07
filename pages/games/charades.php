@@ -36,12 +36,14 @@
                                 echo "<article draggable='true' ondragstart='drag(event)' class='game__item game__item--". $word["id"] ."' id='". $word["id"] ."'>";
                                 echo "<h2 class='game__item-title'>" . $word["title"] . "</h2>";
                                 echo "<p>" . $word["description"] . "</p>";
-                                echo "<p>Forbidden Words</p>";
-                                echo "<ul>";
-                                foreach($word["forbidden"] as $word){
-                                    echo "<li>" . $word . "</li>";
+                                if(sizeof($word["forbidden"]) > 0){
+                                    echo "<p>Forbidden Words</p>";
+                                    echo "<ul>";
+                                    foreach($word["forbidden"] as $word){
+                                        echo "<li>" . $word . "</li>";
+                                    }
+                                    echo "</ul>";
                                 }
-                                echo "</ul>";
                                 echo "</article>";
                             }
                         }
