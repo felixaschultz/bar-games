@@ -21,8 +21,10 @@ const fails = (localStorage.getItem("fail") != null) ? JSON.parse(localStorage.g
 const success = (localStorage.getItem("success") != null) ? JSON.parse(localStorage.getItem("success")).length : 0;
 let interval;
 if(new URLSearchParams(window.location.search).get("start") === 'true'){
+    localStorage.removeItem('fail');
+    localStorage.removeItem('success');
     console.log("Start the game");
-    let count = 61;
+    let count = 60;
     interval = setInterval(function(){
         count--;
         timer.innerHTML = count;
@@ -34,8 +36,6 @@ if(new URLSearchParams(window.location.search).get("start") === 'true'){
 
     }, 1000);
 }
-
-console.log(interval);
 
 function drag(e){
     console.log('drag:', e, e.target);
