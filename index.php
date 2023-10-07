@@ -25,7 +25,8 @@
     </header>
     <main class="main-content">
         <?php
-            include("pages/login.php");
+           include("pages/game-selector.php");     
+            /* include("pages/login.php"); */
         ?>
     </main>
     <footer class="main-footer">

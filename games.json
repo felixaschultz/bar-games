@@ -3,12 +3,14 @@
         "id": 1,
         "name": "Schirades",
         "description": "Schirades is a game where you have to guess the word that is being acted out by the other player.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://via.placeholder.com/150",
+        "uri": "schirades"
     },
     {
         "id": 2,
         "name": "Pictionary",
         "description": "Pictionary is a game where you have to guess the word that is being drawn by the other player.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://via.placeholder.com/150",
+        "uri": "pictionary"
     }
 ]
