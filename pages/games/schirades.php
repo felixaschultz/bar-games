@@ -9,9 +9,11 @@
 <main class="content">
     <?php
         if(!isset($_GET["theme"])){
+            echo "<article class='grid'>";
             foreach($themes as $theme){
-                echo "<a href='?game=".$_GET["game"]."&theme=". $theme["theme"] ."'>" . $theme["title"] . "</a>";
+                echo "<a class='game' href='?game=".$_GET["game"]."&theme=". $theme["theme"] ."'>" . $theme["title"] . "</a>";
             }
+            "</article>";
         } else{
             $theme = $_GET["theme"];
             foreach($themes as $theme){
