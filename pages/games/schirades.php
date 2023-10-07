@@ -17,12 +17,15 @@
             foreach($themes as $theme){
                 if($theme["theme"] == $_GET["theme"]){
                     echo "<h2>" . $theme["title"] . "</h2>";
+                    echo "<p>" . $theme["description"] . "</p>";
+                    echo "<a href='?game=".$_GET["game"]."'>Back</a>";
                 }
             }
         }
         ?>
         <section class="grid">
             <?php
+            if(isset($_GET["theme"])){
                 foreach($themes as $theme){
                     if($theme["theme"] == $_GET["theme"]){
                         foreach($theme["items"] as $word){
@@ -39,6 +42,7 @@
                         }
                     }
                 }
+            }
             ?>
         </section>
 </main>
