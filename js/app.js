@@ -19,4 +19,13 @@ const items = document.querySelectorAll('.game__item');
 
 function drag(e){
     console.log('drag:', e, e.target);
+    e.target.classList.add('dragging');
+}
+
+function drop(e){
+    console.log('drop:', e, e.target);
+}
+
+function allowDrop(e){
+    e.preventDefault();
 }

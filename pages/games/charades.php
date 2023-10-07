@@ -46,5 +46,6 @@
                 }
             }
             ?>
+            <section ondrop="drop(e)" ondragover="allowDrop(e)"></section>
         </section>
 </main>
