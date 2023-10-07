@@ -24,8 +24,9 @@
                 }
             }
         }
-        if(isset($_GET["theme"])){
+        if(isset($_GET["theme"]) && isset($_GET["start"]) && $_GET["start"] == "true"){
         ?>
+        <section class="timer"></section>
         <div class="grid g-3">
             <section class="item-drop success" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
             <section class="container">
@@ -52,5 +53,7 @@
             </section>
             <section class="item-drop fail" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
         </div>
-        <?php } ?>
+        <?php }else{
+            echo "<a href='?game=".$_GET["game"]."&theme=".$_GET["theme"]."&start=true'>Start</a>";
+        } ?>
 </main>

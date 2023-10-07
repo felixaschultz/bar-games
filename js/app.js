@@ -1,3 +1,4 @@
+const timer = document.querySelector('.timer');
 // Function to update the tilt status based on device orientation
 function updateTiltStatus(event) {
     const tiltStatusElement = document.getElementById('tiltStatus');
@@ -16,6 +17,25 @@ function updateTiltStatus(event) {
 window.addEventListener('deviceorientation', updateTiltStatus);
 
 const items = document.querySelectorAll('.game__item');
+const fails = (localStorage.getItem("fail") != null) ? JSON.parse(localStorage.getItem("fail")).length : 0;
+const success = (localStorage.getItem("success") != null) ? JSON.parse(localStorage.getItem("success")).length : 0;
+let interval;
+if(new URLSearchParams(window.location.search).get("start") === 'true'){
+    console.log("Start the game");
+    let count = 60;
+    interval = setInterval(function(){
+        count--;
+        timer.innerHTML = count;
+        if(count === 0){
+            clearInterval(interval);
+            document.querySelector('.container').innerHTML = '<h1>Game Over</h1>';
+            document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+        }
+
+    }, 1000);
+}
+
+console.log(interval);
 
 function drag(e){
     console.log('drag:', e, e.target);
@@ -40,23 +60,23 @@ function drop(ev){
     ev.target.appendChild(document.getElementById(data));
 
     if(document.querySelector('.container').children.length === 0){
-        const fails = (localStorage.getItem("fail") != null) ? JSON.parse(localStorage.getItem("fail")).length : 0;
-        const success = (localStorage.getItem("success") != null) ? JSON.parse(localStorage.getItem("success")).length : 0;
 
         if(fails > success){
             document.querySelector('.container').innerHTML = '<h1>Game Over</h1>';
             document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+            clearInterval(interval);
         }
 
         if(success > fails){
             document.querySelector('.container').innerHTML = '<h1>Game Won</h1>';
             document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+            clearInterval(interval);
         }
 
         if(success === fails){
             document.querySelector('.container').innerHTML = '<h1>Game Draw</h1>';
             document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
-
+            clearInterval(interval);
         }
     }
 
