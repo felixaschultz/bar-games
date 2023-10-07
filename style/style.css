@@ -36,3 +36,8 @@
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
 }
+
+/* Game design */
+.game-title{
+    text-transform: uppercase;
+}
