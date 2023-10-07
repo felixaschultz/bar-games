@@ -20,7 +20,6 @@ const items = document.querySelectorAll('.game__item');
 function drag(e){
     console.log('drag:', e, e.target);
     e.dataTransfer.setData("Text", e.target.id);
-    
 }
 
 function drop(ev){
