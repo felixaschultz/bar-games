@@ -44,8 +44,12 @@
 }
 
 /* Game design */
-.game-title{
+.game-title, .game__item-title{
     text-transform: uppercase;
+}
+
+.game__item-title{
+    text-align: center;
 }
 
 .game{
