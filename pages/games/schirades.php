@@ -17,8 +17,16 @@
             foreach($themes as $theme){
                 if($theme["theme"] == $_GET["theme"]){
                     echo "<h2>" . $theme["title"] . "</h2>";
-                    echo "<article>";
+                }
+            }
+        }
+        ?>
+        <section class="grid">
+            <?php
+                foreach($themes as $theme){
+                    if($theme["theme"] == $_GET["theme"]){
                         foreach($theme["items"] as $word){
+                            echo "<article>";
                             echo "<p>" . $word["title"] . "</p>";
                             echo "<p>" . $word["description"] . "</p>";
                             echo "<p>Forbidden Words</p>";
@@ -27,10 +35,10 @@
                                 echo "<li>" . $word . "</li>";
                             }
                             echo "</ul>";
+                            echo "</article>";
                         }
-                    echo "</article>";
+                    }
                 }
-            }
-        }
-    ?>
+            ?>
+        </section>
 </main>

@@ -30,3 +30,8 @@ body{
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
 }
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
