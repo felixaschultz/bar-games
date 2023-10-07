@@ -268,7 +268,7 @@
     },
     {
         "id": 14,
-        "theme": "",
+        "theme": "kendte-par",
         "title": "Kendte par",
         "description": "",
         "category": "",
@@ -286,7 +286,7 @@
     },
     {
         "id": 15,
-        "theme": "",
+        "theme": "kendte-mænd",
         "title": "Kendte mænd",
         "description": "",
         "category": "",
@@ -307,7 +307,7 @@
     },
     {
         "id": 16,
-        "theme": "",
+        "theme": "eventyr",
         "title": "Eventyr",
         "description": "",
         "category": "",
