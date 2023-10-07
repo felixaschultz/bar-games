@@ -26,7 +26,7 @@ function drop(ev){
     let data = ev.dataTransfer.getData("Text");
     
     if(ev.target.classList.contains('fail')){
-        let failedItems = (localStorage.getItem("fail") === null) ? [] : JSON.parse(localStorage.getItem("fail"));;
+        let failedItems = (localStorage.getItem("fail") === null) ? [] : JSON.parse(localStorage.getItem("fail"));
         failedItems.push(data);
         localStorage.setItem('fail', JSON.stringify(failedItems));
     }
@@ -38,9 +38,28 @@ function drop(ev){
     }
 
     ev.target.appendChild(document.getElementById(data));
+
+    if(document.querySelector('.container').children.length === 0){
+        const fails = JSON.parse(localStorage.getItem("fail")).length;
+        const success = JSON.parse(localStorage.getItem("success")).length;
+
+        if(fails > success){
+            document.querySelector('.container').innerHTML = '<h1>Game Over</h1>';
+        }
+
+        if(success > fails){
+            document.querySelector('.container').innerHTML = '<h1>Game Won</h1>';
+        }
+
+        if(success === fails){
+            document.querySelector('.container').innerHTML = '<h1>Game Draw</h1>';
+        }
+    }
+
     ev.preventDefault();
 }
 
 function allowDrop(e){
     e.preventDefault();
+    
 }
