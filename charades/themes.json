@@ -5,6 +5,7 @@
         "title": "Film",
         "description": "",
         "category": "",
+        "img": "https://via.placeholder.com/150",
         "items": [
             {
                 "id": 1,
@@ -44,6 +45,7 @@
         "theme": "tv-series",
         "title": "TV Serier",
         "description": "",
+        "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {
@@ -67,6 +69,7 @@
         "theme": "skuespillere",
         "title": "Skuesspillere",
         "description": "",
+        "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {
@@ -85,6 +88,7 @@
         "theme": "disney",
         "title": "Disney og Pixar",
         "description": "",
+        "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {
@@ -103,6 +107,7 @@
         "theme": "animals",
         "title": "Dyr",
         "description": "",
+        "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {
@@ -121,6 +126,7 @@
         "theme": "mærker",
         "title": "Mærker",
         "description": "",
+        "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {
@@ -139,6 +145,7 @@
         "theme": "famous-woman",
         "title": "Kendte kvinder",
         "description": "",
+        "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {
@@ -157,6 +164,7 @@
         "theme": "cars",
         "title": "Biler",
         "description": "",
+        "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {
@@ -175,6 +183,7 @@
         "theme": "land",
         "title": "Lande",
         "description": "",
+        "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {
@@ -193,6 +202,7 @@
         "theme": "musikinstrumenter",
         "title": "Musikinstrumenter",
         "description": "",
+        "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {
@@ -211,6 +221,7 @@
         "theme": "sport",
         "title": "Sportsgrene",
         "description": "",
+        "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {
@@ -229,6 +240,7 @@
         "theme": "fiktive-karakter",
         "title": "Fiktive karakterer",
         "description": "",
+        "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {
@@ -250,6 +262,7 @@
         "theme": "books",
         "title": "Bøger",
         "description": "",
+        "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {
@@ -271,6 +284,7 @@
         "theme": "kendte-par",
         "title": "Kendte par",
         "description": "",
+        "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {
@@ -289,6 +303,7 @@
         "theme": "kendte-mænd",
         "title": "Kendte mænd",
         "description": "",
+        "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {
@@ -310,6 +325,7 @@
         "theme": "eventyr",
         "title": "Eventyr",
         "description": "",
+        "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {

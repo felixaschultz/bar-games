@@ -3,7 +3,7 @@
     $games = json_decode(file_get_contents("games.json"), true);
     $themes = json_decode(file_get_contents($root."/charades/themes.json"), true);
 ?>
-<header>
+<header class="header">
     <h1 class="game-title"><?php echo $_GET["game"]?></h1>
 </header>
 <main class="content">
@@ -11,7 +11,10 @@
         if(!isset($_GET["theme"])){
             echo "<article class='grid'>";
             foreach($themes as $theme){
-                echo "<a class='game' href='?game=".$_GET["game"]."&theme=". $theme["theme"] ."'>" . $theme["title"] . "</a>";
+                echo "<a class='game' href='?game=".$_GET["game"]."&theme=". $theme["theme"] ."'>
+                        <img src='".$theme["img"]."'>
+                        " . $theme["title"] . "
+                    </a>";
             }
             "</article>";
         } else{
