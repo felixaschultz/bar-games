@@ -3,7 +3,8 @@
     $games = json_decode(file_get_contents("games.json"), true);
     $themes = json_decode(file_get_contents($root."/charades/themes.json"), true);
 ?>
-<header>
+<header class="header">
+    <img src="../assets/bar-games-logo-2.svg" class="logo">
     <h1 class="game-title"><?php echo $_GET["game"]?></h1>
 </header>
 <main class="content">
@@ -11,7 +12,10 @@
         if(!isset($_GET["theme"])){
             echo "<article class='grid'>";
             foreach($themes as $theme){
-                echo "<a class='game' href='?game=".$_GET["game"]."&theme=". $theme["theme"] ."'>" . $theme["title"] . "</a>";
+                echo "<a class='game' href='?game=".$_GET["game"]."&theme=". $theme["theme"] ."'>
+                        <img src='".$theme["img"]."'>
+                        " . $theme["title"] . "
+                    </a>";
             }
             "</article>";
         } else{
@@ -24,8 +28,9 @@
                 }
             }
         }
-        if(isset($_GET["theme"])){
+        if(isset($_GET["theme"]) && isset($_GET["start"]) && $_GET["start"] == "true"){
         ?>
+        <section class="timer">60</section>
         <div class="grid g-3">
             <section class="item-drop success" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
             <section class="container">
@@ -36,12 +41,14 @@
                                 echo "<article draggable='true' ondragstart='drag(event)' class='game__item game__item--". $word["id"] ."' id='". $word["id"] ."'>";
                                 echo "<h2 class='game__item-title'>" . $word["title"] . "</h2>";
                                 echo "<p>" . $word["description"] . "</p>";
-                                echo "<p>Forbidden Words</p>";
-                                echo "<ul>";
-                                foreach($word["forbidden"] as $word){
-                                    echo "<li>" . $word . "</li>";
+                                if(sizeof($word["forbidden"]) > 0){
+                                    echo "<p>Forbidden Words</p>";
+                                    echo "<ul>";
+                                    foreach($word["forbidden"] as $word){
+                                        echo "<li>" . $word . "</li>";
+                                    }
+                                    echo "</ul>";
                                 }
-                                echo "</ul>";
                                 echo "</article>";
                             }
                         }
@@ -50,5 +57,7 @@
             </section>
             <section class="item-drop fail" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
         </div>
-        <?php } ?>
+        <?php }else if(isset($_GET["theme"]) && !isset($_GET["start"])){
+            echo "<a href='?game=".$_GET["game"]."&theme=".$_GET["theme"]."&start=true' class='cta'>Start the game</a>";
+        } ?>
 </main>

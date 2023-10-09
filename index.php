@@ -22,7 +22,7 @@
 </head>
 <body>
     <header class="main-header">
-
+        <img src="assets/bar-games-logo.svg">
     </header>
     <main class="main-content">
         <?php

@@ -3,6 +3,9 @@
     $games = json_decode(file_get_contents("games.json"), true);
 ?>
 <main>
+    <header>
+        <img src="../assets/bar-games-logo-2.svg" class="logo">
+    </header>
     <h1>Game Selector</h1>
     <ul>
         <?php
