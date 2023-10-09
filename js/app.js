@@ -44,15 +44,15 @@ function drag(e){
 
 function drop(ev){
     let data = ev.dataTransfer.getData("Text");
-    
+    let failedItems = (localStorage.getItem("fail") === null) ? [] : JSON.parse(localStorage.getItem("fail"));
+    let successItems = (localStorage.getItem("success") === null) ? [] : JSON.parse(localStorage.getItem("success"));
+
     if(ev.target.classList.contains('fail')){
-        let failedItems = (localStorage.getItem("fail") === null) ? [] : JSON.parse(localStorage.getItem("fail"));
         failedItems.push(data);
         localStorage.setItem('fail', JSON.stringify(failedItems));
     }
 
     if(ev.target.classList.contains('success')){
-        let successItems = (localStorage.getItem("success") === null) ? [] : JSON.parse(localStorage.getItem("success"));
         successItems.push(data);
         localStorage.setItem('success', JSON.stringify(successItems));
     }
@@ -61,19 +61,21 @@ function drop(ev){
 
     if(document.querySelector('.container').children.length === 0){
 
-        if(fails > success){
+        if(failedItems.length > successItems.length){
             document.querySelector('.container').innerHTML = '<h1>Game Over</h1>';
             document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
             clearInterval(interval);
         }
 
-        if(success > fails){
+        if(successItems.length > failedItems.length){
             document.querySelector('.container').innerHTML = '<h1>Game Won</h1>';
             document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
             clearInterval(interval);
         }
 
-        if(success === fails){
+        console.log(successItems, failedItems);
+
+        if(successItems.length === failedItems.length){
             document.querySelector('.container').innerHTML = '<h1>Game Draw</h1>';
             document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
             clearInterval(interval);
