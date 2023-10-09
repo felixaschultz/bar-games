@@ -75,6 +75,9 @@
 
 .game__item-title{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .game{
@@ -103,6 +106,10 @@
     min-width: 350px;
     width: 100%;
     max-width: 600px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
 }
 
 .game__item--1{
@@ -124,6 +131,22 @@
     display: none;
 }
 
+.game__item-success{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--success-color);
+}
+
+.game__item-fail{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--danger-color);
+}
+
+.hide{
+    display: none;
+}
+
 /* Timer */
 .timer{
     font-size: 2rem;
@@ -132,6 +155,15 @@
     text-align: right;
 }
 
+/* Success list */
+.success-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+
 .failed{
-    text-decoration: line-through;
+    color: var(--danger-color);
 }

@@ -1,4 +1,6 @@
 const timer = document.querySelector('.timer');
+let failedItems = [];
+let successItems = [];
 // Function to update the tilt status based on device orientation
 function updateTiltStatus(event) {
     const tiltStatusElement = document.getElementById('tiltStatus');
@@ -30,22 +32,85 @@ if(new URLSearchParams(window.location.search).get("start") === 'true'){
         timer.innerHTML = count;
         if(count === 0){
             clearInterval(interval);
-            document.querySelector('.container').innerHTML = '<h1>Game Over</h1>';
-            document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+            /* document.querySelector('.container').innerHTML = '<h1>Game Over</h1>';
+            document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>'; */
         }
 
     }, 1000);
 }
 
-function drag(e){
+document.querySelectorAll(".game__item-fail").forEach(item => {
+    item.addEventListener("click", function(e){
+        failedItems.push(e.target.parentElement.id);
+        e.target.parentElement.classList.add('hide');
+        localStorage.setItem('fail', JSON.stringify(failedItems));
+
+        if(document.querySelectorAll(".game__item-fail")[document.querySelectorAll(".game__item-fail").length - 1].parentElement.classList.contains('hide')){
+            if(failedItems.length > successItems.length){
+                document.querySelector('.container').innerHTML = '<h1>Game Over</h1>';
+                document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+                clearInterval(interval);
+            }
+    
+            if(successItems.length > failedItems.length){
+                document.querySelector('.container').innerHTML = '<h1>Game Won</h1>';
+                document.querySelector('.container').innerHTML += `<ul class="success-list">
+                </ul>`;
+                document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+                clearInterval(interval);
+            }
+    
+            if(successItems.length === failedItems.length){
+                document.querySelector('.container').innerHTML = '<h1>Game Draw</h1>';
+                document.querySelector('.container').innerHTML += `<ul class="success-list">
+                </ul>`;
+                document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+                clearInterval(interval);
+            }
+        }
+
+    })
+})
+
+document.querySelectorAll(".game__item-success").forEach(item => {
+    item.addEventListener("click", function(e){
+        successItems.push(e.target.parentElement.id);
+        e.target.parentElement.classList.add('hide');
+        localStorage.setItem('success', JSON.stringify(successItems));
+
+        if(document.querySelectorAll(".game__item-success")[document.querySelectorAll(".game__item-success").length - 1].parentElement.classList.contains('hide')){
+            if(failedItems.length > successItems.length){
+                document.querySelector('.container').innerHTML = '<h1>Game Over</h1>';
+                document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+                clearInterval(interval);
+            }
+    
+            if(successItems.length > failedItems.length){
+                document.querySelector('.container').innerHTML = '<h1>Game Won</h1>';
+                document.querySelector('.container').innerHTML += `<ul class="success-list">
+                </ul>`;
+                document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+                clearInterval(interval);
+            }
+    
+            if(successItems.length === failedItems.length){
+                document.querySelector('.container').innerHTML = '<h1>Game Draw</h1>';
+                document.querySelector('.container').innerHTML += `<ul class="success-list">
+                </ul>`;
+                document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+                clearInterval(interval);
+            }
+        }
+    })
+})
+
+/* function drag(e){
     console.log('drag:', e, e.target);
     e.dataTransfer.setData("Text", e.target.id);
 }
 
 function drop(ev){
     let data = ev.dataTransfer.getData("Text");
-    let failedItems = (localStorage.getItem("fail") === null) ? [] : JSON.parse(localStorage.getItem("fail"));
-    let successItems = (localStorage.getItem("success") === null) ? [] : JSON.parse(localStorage.getItem("success"));
 
     if(ev.target.classList.contains('fail')){
         failedItems.push(data);
@@ -93,7 +158,7 @@ function drop(ev){
 function allowDrop(e){
     e.preventDefault();
     
-}
+} */
 
 function playAgain(){
     localStorage.removeItem('fail');
