@@ -42,6 +42,7 @@ if(new URLSearchParams(window.location.search).get("start") === 'true'){
 document.querySelectorAll(".game__item-fail").forEach(item => {
     item.addEventListener("click", function(e){
         failedItems.push(e.target.parentElement.id);
+        e.target.parentElement.classList.add('hide-failed');
         e.target.parentElement.classList.add('hide');
         localStorage.setItem('fail', JSON.stringify(failedItems));
 
@@ -75,6 +76,7 @@ document.querySelectorAll(".game__item-fail").forEach(item => {
 document.querySelectorAll(".game__item-success").forEach(item => {
     item.addEventListener("click", function(e){
         successItems.push(e.target.parentElement.id);
+        e.target.parentElement.classList.add('hide-success');
         e.target.parentElement.classList.add('hide');
         localStorage.setItem('success', JSON.stringify(successItems));
 
