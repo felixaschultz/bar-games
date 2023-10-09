@@ -3,7 +3,7 @@
         "id": 1,
         "theme": "film",
         "title": "Film",
-        "description": "",
+        "description": "This is a simple description of the theme film",
         "category": "",
         "img": "https://via.placeholder.com/150",
         "items": [
