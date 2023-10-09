@@ -149,12 +149,12 @@
 }
 
 .hide-failed{
-    bottom: -100%;
+    bottom: -140%;
     top: auto;
 }
 
 .hide-success{
-    top: -100%;
+    top: -140%;
     bottom: auto;
 }
 
