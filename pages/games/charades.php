@@ -22,9 +22,9 @@
             $theme = $_GET["theme"];
             foreach($themes as $theme){
                 if($theme["theme"] == $_GET["theme"]){
-                    echo "<h2>" . $theme["title"] . "</h2>";
+                    echo "<h2 class='theme-title'>" . $theme["title"] . "</h2>";
+                    echo "<a class='back-btn' href='?game=".$_GET["game"]."'>Back</a>";
                     echo "<p>" . $theme["description"] . "</p>";
-                    echo "<a href='?game=".$_GET["game"]."'>Back</a>";
                 }
             }
         }
