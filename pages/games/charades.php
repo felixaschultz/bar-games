@@ -4,6 +4,7 @@
     $themes = json_decode(file_get_contents($root."/charades/themes.json"), true);
 ?>
 <header class="header">
+    <img src="../assets/bar-games-logo-2.svg" class="logo">
     <h1 class="game-title"><?php echo $_GET["game"]?></h1>
 </header>
 <main class="content">

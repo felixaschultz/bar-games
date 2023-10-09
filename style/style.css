@@ -49,6 +49,10 @@
     margin: 0 auto;
 }
 
+/* Logo */
+.logo{
+    width: 10%;
+}
 /* Game design */
 .game-title, .game__item-title{
     text-transform: uppercase;
@@ -59,12 +63,13 @@
 }
 
 .game{
-    display: block;
+    display: grid;
     width: 100%;
     height: 250px;
     background-color: #414141;
     border-radius: 10px;
     padding: 35px;
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
 }
 
 .container{
