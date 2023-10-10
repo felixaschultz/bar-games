@@ -40,10 +40,11 @@
                 <?php
                     foreach($themes as $theme){
                         if($theme["theme"] == $_GET["theme"]){
-                            foreach($theme["items"] as $word){
-                                echo "<article style='z-index: ". -$word["id"] ."' class='game__item game__item--". $word["id"] ."' id='". $word["id"] ."'>";
+                            shuffle($theme["items"]);
+                            foreach($theme["items"] as $key=>$item){
+                                echo "<article style='z-index: ". -$key ."' class='game__item game__item--". $item["id"] ."' id='". $item["id"] ."'>";
                                 echo "<div class='game__item-success'></div>";
-                                echo "<h2 class='game__item-title'>" . $word["title"] . "</h2>";
+                                echo "<h2 class='game__item-title'>" . $item["title"] . "</h2>";
                                 echo "<div class='game__item-fail'></div>";
                                 /* echo "<p>" . $word["description"] . "</p>";
                                 if(sizeof($word["forbidden"]) > 0){
