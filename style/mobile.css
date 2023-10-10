@@ -9,7 +9,7 @@
         margin: 10px 0;
     }
 
-    .grid{
+    .grid, .game{
         grid-template-columns: 1fr;
     }
 
