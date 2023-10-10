@@ -127,6 +127,51 @@
 
                 ],
                 "link": ""
+            },
+            {
+                "id": 13,
+                "title": "The Bourne Identity",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 14,
+                "title": "Leathal Weapon 1",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 15,
+                "title": "The Fugitive",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 13,
+                "title": "Stargate",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 14,
+                "title": "Shooter",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
             }
         ]
     },
@@ -149,6 +194,123 @@
                     "Monica Geller",
                     "Phoebe Buffay",
                     "Ross Geller"
+                ],
+                "link": ""
+            },
+            {
+                "id": 2,
+                "title": "Loki",
+                "description": "",
+                "forbidden": [
+                   
+                ],
+                "link": ""
+            },
+            {
+                "id": 3,
+                "title": "Leathal Weapon",
+                "description": "",
+                "forbidden": [
+                    
+                ],
+                "link": ""
+            },
+            {
+                "id": 4,
+                "title": "Blue Bloods",
+                "description": "",
+                "forbidden": [
+                    
+                ],
+                "link": ""
+            },
+            {
+                "id": 5,
+                "title": "The Simpsons",
+                "description": "",
+                "forbidden": [
+                    
+                ],
+                "link": ""
+            },
+            {
+                "id": 6,
+                "title": "Rizzoli & Isles",
+                "description": "",
+                "forbidden": [
+                    
+                ],
+                "link": ""
+            },
+            {
+                "id": 7,
+                "title": "The Mordern Family",
+                "description": "",
+                "forbidden": [
+                    
+                ],
+                "link": ""
+            },
+            {
+                "id": 8,
+                "title": "The Big Bang Theory",
+                "description": "",
+                "forbidden": [
+                    
+                ],
+                "link": ""
+            },
+            {
+                "id": 9,
+                "title": "The Morning Show",
+                "description": "",
+                "forbidden": [
+                    
+                ],
+                "link": ""
+            },
+            {
+                "id": 10,
+                "title": "The Blacklist",
+                "description": "",
+                "forbidden": [
+                    
+                ],
+                "link": ""
+            },
+            {
+                "id": 11,
+                "title": "The Closer",
+                "description": "",
+                "forbidden": [
+                    
+                ],
+                "link": ""
+            },
+            {
+                "id": 12,
+                "title": "Death in Paradise",
+                "description": "",
+                "forbidden": [
+                    
+                ],
+                "link": ""
+            },
+            {
+                "id": 13,
+                "title": "Dickinson",
+                "description": "",
+                "forbidden": [
+                    
+                ],
+                "link": ""
+            },
+            {
+                "id": 14,
+                "title": "Koch'en på toppen",
+                "description": "",
+                "forbidden": [
+                    
                 ],
                 "link": ""
             }

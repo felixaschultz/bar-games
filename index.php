@@ -37,18 +37,11 @@
     <script src="manifest.webmanifest"></script>
 </head>
 <body>
-    <header class="main-header">
-        <img src="assets/bar-games-logo.svg">
-    </header>
-    <main class="main-content">
+    <main class="content">
         <?php
-           include("pages/game-selector.php");     
-            /* include("pages/login.php"); */
+           include("pages/game-selector.php");
         ?>
     </main>
-    <footer class="main-footer">
-
-    </footer>
     <script src="js/websocket.js"></script>
     <script src="js/app.js"></script>
 </body>
