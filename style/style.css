@@ -95,7 +95,7 @@
     position: relative;
     display: grid;
     place-content: center;
-    height: 300px;
+    min-height: 300px;
     overflow: hidden;
     isolation: isolate;
 }
