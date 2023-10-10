@@ -5,12 +5,12 @@
         }
     },
     "routes": [
-        { "src": "/index.php",  "dest": "/index.php" },
-        { "src": "/game.php",  "dest": "/game.php" },
-        { "src": "/style/style.css", "dest": "/style/style.css" },
-        { "src": "/style/reset.css", "dest": "/style/reset.css" },
-        { "src": "/style/mobile.css", "dest": "/style/mobile.css" },
-        { "src": "/js/app.js", "dest": "/js/app.js" },
-        { "src": "/js/websocket.js", "dest": "/js/websocket.js" }
+        { "src": "/index.php",  "dest": "/api/index.php" },
+        { "src": "/game.php",  "dest": "/api/game.php" },
+        { "src": "/style/style.css", "dest": "/api/style/style.css" },
+        { "src": "/style/reset.css", "dest": "/api/style/reset.css" },
+        { "src": "/style/mobile.css", "dest": "/api/style/mobile.css" },
+        { "src": "/js/app.js", "dest": "/api/js/app.js" },
+        { "src": "/js/websocket.js", "dest": "/api/js/websocket.js" }
     ]
 }
