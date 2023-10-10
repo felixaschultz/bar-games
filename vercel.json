@@ -1,15 +1,15 @@
 {
     "functions": {
-      "api/**/*.php": {
+        "api/**/*.php": {
         "runtime": "vercel-php@0.5.2"
-      }
+        }
     },
     "routes": [
-      { "src": "/(.*)",  "dest": "/index.php" },
-      { "src": "/style/style.css", "dest": "/style/style.css" },
-      { "src": "/style/reset.css", "dest": "/style/reset.css" },
-      { "src": "/style/mobile.css", "dest": "/style/mobile.css" },
-      { "src": "/js/app.js", "dest": "/js/app.js" },
-      { "src": "/js/websocket.js", "dest": "/js/websocket.js" }
+        { "src": "/(.*)",  "dest": "/index.php" },
+        { "src": "/style/style.css", "dest": "/style/style.css" },
+        { "src": "/style/reset.css", "dest": "/style/reset.css" },
+        { "src": "/style/mobile.css", "dest": "/style/mobile.css" },
+        { "src": "/js/app.js", "dest": "/js/app.js" },
+        { "src": "/js/websocket.js", "dest": "/js/websocket.js" }
     ]
 }
