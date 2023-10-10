@@ -9,8 +9,9 @@
         { "src": "/game.php",  "dest": "/api/game.php" },
         { "src": "/style/style.css", "dest": "/api/style/style.css" },
         { "src": "/style/reset.css", "dest": "/api/style/reset.css" },
-        { "src": "/style/mobile.css", "dest": "/api/style/mobile.css" },
+        { "src": "/style/mobile.css", "dest": "/api/style/mobile.css"},
         { "src": "/js/app.js", "dest": "/api/js/app.js" },
-        { "src": "/js/websocket.js", "dest": "/api/js/websocket.js" }
+        { "src": "/js/websocket.js", "dest": "/api/js/websocket.js"},
+        { "src": "/manifest.webmanifest", "dest": "/api/manifest.webmanifest"}
     ]
 }
