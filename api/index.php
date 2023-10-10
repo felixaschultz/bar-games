@@ -39,7 +39,7 @@
 <body>
     <main class="content">
         <?php
-           include("pages/game-selector.php");
+           include("../pages/game-selector.php");
         ?>
     </main>
     <script src="js/websocket.js"></script>
