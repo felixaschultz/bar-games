@@ -1,6 +1,6 @@
 <?php
     $root = $_SERVER["DOCUMENT_ROOT"];
-    $games = json_decode(file_get_contents("games.json"), true);
+    $games = json_decode(file_get_contents($root . "/games.json"), true);
     $themes = json_decode(file_get_contents($root."/charades/themes.json"), true);
 ?>
 <header class="header">

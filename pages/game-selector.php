@@ -1,6 +1,6 @@
 <!-- Game Selector screen -->
 <?php
-    $games = json_decode(file_get_contents("games.json"), true);
+    $games = json_decode(file_get_contents($_SERVER["DOCUMENT_ROOT"] . "/games.json"), true);
 ?>
 <main>
     <header>

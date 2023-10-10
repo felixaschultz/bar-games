@@ -14,7 +14,7 @@
     <script src="manifest.webmanifest"></script>
 </head>
 <body>
-    <?php include("pages/games/" . $game . ".php") ?>
+    <?php include($_SERVER["DOCUMENT_ROOT"] . "/pages/games/" . $game . ".php") ?>
     <script src="js/websocket.js"></script>
     <script src="js/app.js"></script>
 </body>
