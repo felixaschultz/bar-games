@@ -32,8 +32,8 @@ if(new URLSearchParams(window.location.search).get("start") === 'true'){
         timer.innerHTML = count;
         if(count === 0){
             clearInterval(interval);
-            document.querySelector('.container').innerHTML = '<h1>Game Over</h1>';
-            document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+            /* document.querySelector('.container').innerHTML = '<h1>Game Over</h1>';
+            document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>'; */
         }
 
     }, 1000);
