@@ -31,6 +31,7 @@
 
         if(isset($_GET["theme"]) && isset($_GET["start"]) && $_GET["start"] == "true"){
         ?>
+        <a href="?game=<?php echo $_GET["game"]?>">Back</a>
         <section class="timer">60</section>
         <div class=" g-3">
             <!-- draggable='true' ondragstart='drag(event)' -->

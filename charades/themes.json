@@ -326,7 +326,145 @@
         "items": [
             {
                 "id": 1,
-                "title": "",
+                "title": "Leonardo DiCaprio",
+                "description": "",
+                "forbidden": [
+                    "Leonardo DiCaprio",
+                    "Titanic",
+                    "The Wolf of Wall Street",
+                    "The Revenant",
+                    "Once Upon a Time in Hollywood"
+                ],
+                "link": ""
+            },
+            {
+                "id": 2,
+                "title": "Brad Pitt",
+                "description": "",
+                "forbidden": [
+                    "Brad Pitt",
+                    "Fight Club",
+                    "Once Upon a Time in Hollywood",
+                    "Inglourious Basterds",
+                    "Se7en"
+                ],
+                "link": ""
+            },
+            {
+                "id": 3,
+                "title": "Tom Cruise",
+                "description": "",
+                "forbidden": [
+                    "Top Gun"
+                ],
+                "link": ""
+            },
+            {
+                "id": 4,
+                "title": "Mila Kunis",
+                "description": "",
+                "forbidden": [
+                    "Mila Kunis",
+                    "Black Swan",
+                    "Ted",
+                    "Friends with Benefits",
+                    "That '70s Show"
+                ],
+                "link": ""
+            },
+            {
+                "id": 5,
+                "title": "Will Smith",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 6,
+                "title": "Robert Downey Jr.",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 7,
+                "title": "Johnny Depp",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 8,
+                "title": "Tom Hanks",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 9,
+                "title": "Dwayne Johnson",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 10,
+                "title": "Jennifer Lawrence",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 11,
+                "title": "Scarlett Johansson",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 12,
+                "title": "Paul Walker",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 13,
+                "title": "Vin Diesel",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 14,
+                "title": "Chris Hemsworth",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 15,
+                "title": "Michelle Rodriguez",
                 "description": "",
                 "forbidden": [
 
