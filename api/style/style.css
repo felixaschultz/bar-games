@@ -1,0 +1,182 @@
+/* Login screen style */
+.loginContainer{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+.login__screen{
+    width: 450px;
+}
+
+.form-input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.username-label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Header */
+.header{
+    padding: 30px 15px;
+    max-width: 950px;
+    margin: auto;
+    display: flex;
+}
+/* CTA Styling */
+.cta{
+    display: block;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.back-btn{
+    padding: 30px 0;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Content */
+.content{
+    min-width: 340px;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.theme-title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Logo */
+.logo{
+    width: 10%;
+    margin-right: 50px;
+}
+/* Game design */
+.game-title, .game__item-title{
+    text-transform: uppercase;
+}
+
+.game__item-title{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game{
+    display: grid;
+    background-color: #414141;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 2rem;
+    grid-template-columns: repeat(2, minmax(150px, max-content));
+    gap: 10px;
+}
+
+.container{
+    position: relative;
+    display: grid;
+    place-content: center;
+    min-height: 300px;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.game__item{
+    background-color: #414141;
+    position: absolute;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    min-width: 350px;
+    width: 100%;
+    max-width: 600px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    left: 0;
+    right: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.item-drop{
+    border: 1px dashed #03a000;
+    height: 300px;
+    position: relative;
+}
+
+.item-drop.fail{
+    border-color: var(--danger-color);
+}
+
+.item-drop .game__item{
+    width: 100%;
+    display: none;
+}
+
+.game__item-success{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--success-color);
+    border: none;
+}
+
+.game__item-fail{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--danger-color);
+    border: none;
+}
+
+.hide-failed{
+    right: -140%;
+    transform: rotate(-10deg);
+    left: auto;
+}
+
+.hide-success{
+    left: -140%;
+    transform: rotate(10deg);
+    right: auto;
+}
+
+/* Timer */
+.timer{
+    font-size: 2rem;
+    margin: 10px 0;
+    color: var(--warning-color);
+    text-align: right;
+}
+
+/* Success list */
+.success-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+
+.failed{
+    color: var(--danger-color);
+}
