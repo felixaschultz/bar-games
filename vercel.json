@@ -6,6 +6,7 @@
     },
     "routes": [
         { "src": "/(.*)",  "dest": "/api/index.php" },
+        { "src": "/game.php",  "dest": "/api/game.php" },
         { "src": "/style/style.css", "dest": "/api/style/style.css" },
         { "src": "/style/reset.css", "dest": "/api/style/reset.css" },
         { "src": "/style/mobile.css", "dest": "/api/style/mobile.css" },
