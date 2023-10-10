@@ -32,8 +32,8 @@ if(new URLSearchParams(window.location.search).get("start") === 'true'){
         timer.innerHTML = count;
         if(count === 0){
             clearInterval(interval);
-            /* document.querySelector('.container').innerHTML = '<h1>Game Over</h1>';
-            document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>'; */
+            document.querySelector('.container').innerHTML = '<h1>Game Over</h1>';
+            document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
         }
 
     }, 1000);
@@ -106,6 +106,7 @@ document.querySelectorAll(".game__item-success").forEach(item => {
                     document.querySelector('.container').innerHTML += '<h1>Game Won</h1>';
                     document.querySelector('.container').innerHTML += `<ul class="success-list">
                         ${successItems.map(item => `<li>${document.getElementById(item).querySelector(".game__item-title").innerText}</li>`).join('')}
+                        ${failedItems.map(item => `<li class='failed'>${document.getElementById(item).innerText}</li>`).join('')}
                     </ul>`;
                     document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
                     clearInterval(interval);
