@@ -39,7 +39,7 @@
                     foreach($themes as $theme){
                         if($theme["theme"] == $_GET["theme"]){
                             foreach($theme["items"] as $word){
-                                echo "<article class='game__item game__item--". $word["id"] ."' id='". $word["id"] ."'>";
+                                echo "<article style='z-index: ". -$word["id"] ."' class='game__item game__item--". $word["id"] ."' id='". $word["id"] ."'>";
                                 echo "<div class='game__item-success'></div>";
                                 echo "<h2 class='game__item-title'>" . $word["title"] . "</h2>";
                                 echo "<div class='game__item-fail'></div>";

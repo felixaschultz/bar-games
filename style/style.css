@@ -25,7 +25,7 @@
 /* Header */
 .header{
     padding: 30px 15px;
-    max-width: 1200px;
+    max-width: 950px;
     margin: auto;
     display: flex;
 }
@@ -95,8 +95,9 @@
     position: relative;
     display: grid;
     place-content: center;
-    height: 300px;
+    min-height: 300px;
     overflow: hidden;
+    isolation: isolate;
 }
 
 .game__item{
@@ -112,13 +113,9 @@
     text-align: center;
     grid-template-columns: repeat(3, 1fr);
     height: 100%;
-    top: 0;
-    bottom: 0;
+    left: 0;
+    right: 0;
     transition: all 0.2s ease-in-out;
-}
-
-.game__item--1{
-    z-index: 1;
 }
 
 .item-drop{
@@ -149,13 +146,13 @@
 }
 
 .hide-failed{
-    bottom: -100%;
-    top: auto;
+    right: -140%;
+    left: auto;
 }
 
 .hide-success{
-    top: -100%;
-    bottom: auto;
+    left: -140%;
+    right: auto;
 }
 
 /* Timer */

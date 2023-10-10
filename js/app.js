@@ -47,27 +47,37 @@ document.querySelectorAll(".game__item-fail").forEach(item => {
         localStorage.setItem('fail', JSON.stringify(failedItems));
 
         if(document.querySelectorAll(".game__item-fail")[document.querySelectorAll(".game__item-fail").length - 1].parentElement.classList.contains('hide')){
-            if(failedItems.length > successItems.length){
-                document.querySelector('.container').innerHTML = '<h1>Game Over</h1>';
-                document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
-                clearInterval(interval);
-            }
-    
-            if(successItems.length > failedItems.length){
-                document.querySelector('.container').innerHTML = '<h1>Game Won</h1>';
-                document.querySelector('.container').innerHTML += `<ul class="success-list">
-                </ul>`;
-                document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
-                clearInterval(interval);
-            }
-    
-            if(successItems.length === failedItems.length){
-                document.querySelector('.container').innerHTML = '<h1>Game Draw</h1>';
-                document.querySelector('.container').innerHTML += `<ul class="success-list">
-                </ul>`;
-                document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
-                clearInterval(interval);
-            }
+            setTimeout(function(){
+                if(failedItems.length > successItems.length){
+                    document.querySelector('.container').innerHTML += '<h1>Game Over</h1>';
+                    document.querySelector('.container').innerHTML += `<ul class="success-list">
+                        ${successItems.map(item => `<li>${document.getElementById(item).innerText}</li>`).join('')}
+                        ${failedItems.map(item => `<li class='failed'>${document.getElementById(item).innerText}</li>`).join('')}
+                    </ul>`;
+                    document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+                    clearInterval(interval);
+                }
+        
+                if(successItems.length > failedItems.length){
+                    document.querySelector('.container').innerHTML += '<h1>Game Won</h1>';
+                    document.querySelector('.container').innerHTML += `<ul class="success-list">
+                        ${successItems.map(item => `<li>${document.getElementById(item).querySelector(".game__item-title").innerText}</li>`).join('')}
+                        ${failedItems.map(item => `<li class='failed'>${document.getElementById(item).innerText}</li>`).join('')}
+                    </ul>`;
+                    document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+                    clearInterval(interval);
+                }
+        
+                if(successItems.length === failedItems.length){
+                    document.querySelector('.container').innerHTML += '<h1>Game Draw</h1>';
+                    document.querySelector('.container').innerHTML += `<ul class="success-list">
+                        ${successItems.map(item => `<li>${document.getElementById(item).querySelector(".game__item-title").innerText}</li>`).join('')}
+                        ${failedItems.map(item => `<li class='failed'>${document.getElementById(item).querySelector(".game__item-title").innerText}</li>`).join('')}
+                    </ul>`;
+                    document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+                    clearInterval(interval);
+                }
+            }, 500)
         }
 
     })
@@ -81,27 +91,36 @@ document.querySelectorAll(".game__item-success").forEach(item => {
         localStorage.setItem('success', JSON.stringify(successItems));
 
         if(document.querySelectorAll(".game__item-success")[document.querySelectorAll(".game__item-success").length - 1].parentElement.classList.contains('hide')){
-            if(failedItems.length > successItems.length){
-                document.querySelector('.container').innerHTML = '<h1>Game Over</h1>';
-                document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
-                clearInterval(interval);
-            }
-    
-            if(successItems.length > failedItems.length){
-                document.querySelector('.container').innerHTML = '<h1>Game Won</h1>';
-                document.querySelector('.container').innerHTML += `<ul class="success-list">
-                </ul>`;
-                document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
-                clearInterval(interval);
-            }
-    
-            if(successItems.length === failedItems.length){
-                document.querySelector('.container').innerHTML = '<h1>Game Draw</h1>';
-                document.querySelector('.container').innerHTML += `<ul class="success-list">
-                </ul>`;
-                document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
-                clearInterval(interval);
-            }
+            setTimeout(function(){
+                if(failedItems.length > successItems.length){
+                    document.querySelector('.container').innerHTML += '<h1>Game Over</h1>';
+                    document.querySelector('.container').innerHTML += `<ul class="success-list">
+                        ${successItems.map(item => `<li>${document.getElementById(item).innerText}</li>`).join('')}
+                        ${failedItems.map(item => `<li class='failed'>${document.getElementById(item).innerText}</li>`).join('')}
+                    </ul>`;
+                    document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+                    clearInterval(interval);
+                }
+        
+                if(successItems.length > failedItems.length){
+                    document.querySelector('.container').innerHTML += '<h1>Game Won</h1>';
+                    document.querySelector('.container').innerHTML += `<ul class="success-list">
+                        ${successItems.map(item => `<li>${document.getElementById(item).querySelector(".game__item-title").innerText}</li>`).join('')}
+                    </ul>`;
+                    document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+                    clearInterval(interval);
+                }
+        
+                if(successItems.length === failedItems.length){
+                    document.querySelector('.container').innerHTML += '<h1>Game Draw</h1>';
+                    document.querySelector('.container').innerHTML += `<ul class="success-list">
+                        ${successItems.map(item => `<li>${document.getElementById(item).querySelector(".game__item-title").innerText}</li>`).join('')}
+                        ${failedItems.map(item => `<li class='failed'>${document.getElementById(item).querySelector(".game__item-title").innerText}</li>`).join('')}
+                    </ul>`;
+                    document.querySelector('.container').innerHTML += '<button onClick="playAgain()" class="cta">Play Again</button>';
+                    clearInterval(interval);
+                }
+            }, 500)
         }
     })
 })
