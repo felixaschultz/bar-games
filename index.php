@@ -34,7 +34,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="manifest.webmanifest"></script>
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
     <main class="content">
