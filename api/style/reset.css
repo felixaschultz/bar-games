@@ -1,0 +1,49 @@
+/* Default styleing reset */
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #f7941d;
+    --secondary-color: #fff;
+    --tertiary-color: #f5f5f5;
+    --danger-color: #ea4335;
+    --success-color: #34a853;
+    --warning-color: #fbbc05;
+    --info-color: #4285f4;
+    --background-color: #222222;
+
+    --primary-text-color: #fff;
+    --secondary-text-color: #757575;
+    --tertiary-text-color: #222222;
+    --danger-text-color: #fff;
+    --success-text-color: #fff;
+    --warning-text-color: #fff;
+    --info-text-color: #fff;
+    
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline-block;
+    padding: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.g-3{
+    grid-template-columns: 1fr 1fr 1fr;
+}

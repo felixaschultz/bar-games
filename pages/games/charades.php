@@ -1,11 +1,20 @@
 <?php
     $root = $_SERVER["DOCUMENT_ROOT"];
-    $games = json_decode(file_get_contents("games.json"), true);
+    $games = json_decode(file_get_contents($root . "/games.json"), true);
     $themes = json_decode(file_get_contents($root."/charades/themes.json"), true);
 ?>
 <header class="header">
     <img src="../assets/bar-games-logo-2.svg" class="logo">
-    <h1 class="game-title"><?php echo $_GET["game"]?></h1>
+    <section>
+        <h1 class="game-title"><?php echo $_GET["game"]?></h1>
+        <?php
+            foreach($games as $game){
+                if($game["uri"] == $_GET["game"]){
+                    echo "<p class='game-description'>" . $game["description"] . "</p>";
+                }
+            }
+        ?>
+    </section>
 </header>
 <main class="content">
     <?php
@@ -18,16 +27,8 @@
                     </a>";
             }
             "</article>";
-        } else{
-            $theme = $_GET["theme"];
-            foreach($themes as $theme){
-                if($theme["theme"] == $_GET["theme"]){
-                    echo "<h2 class='theme-title'>" . $theme["title"] . "</h2>";
-                    echo "<a class='back-btn' href='?game=".$_GET["game"]."'>Back</a>";
-                    echo "<p>" . $theme["description"] . "</p>";
-                }
-            }
         }
+
         if(isset($_GET["theme"]) && isset($_GET["start"]) && $_GET["start"] == "true"){
         ?>
         <section class="timer">60</section>
@@ -61,6 +62,22 @@
             <!-- <section class="item-drop fail" ondrop="drop(event)" ondragover="allowDrop(event)"></section> -->
         </div>
         <?php }else if(isset($_GET["theme"]) && !isset($_GET["start"])){
-            echo "<a href='?game=".$_GET["game"]."&theme=".$_GET["theme"]."&start=true' class='cta'>Start the game</a>";
+            foreach($themes as $theme){
+                if($theme["theme"] == $_GET["theme"]){
+                    echo "<h2 class='theme-title'>" . $theme["title"] . "</h2>";
+                    echo "<a class='back-btn' href='?game=".$_GET["game"]."'>Back</a>";
+                    echo "<p>" . $theme["description"] . "</p>";
+                    echo "<ol>";
+                        foreach($games as $game){
+                            if($game["uri"] == $_GET["game"]){
+                                foreach($game["rules"] as $rule){
+                                    echo "<li>" . $rule . "</li>";
+                                }
+                            }
+                        }
+                    echo "</ol>";
+                    echo "<a href='?game=".$_GET["game"]."&theme=".$_GET["theme"]."&start=true' class='cta'>Start the game</a>";
+                }
+            }
         } ?>
 </main>
