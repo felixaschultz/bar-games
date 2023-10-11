@@ -2,6 +2,7 @@
     $root = $_SERVER["DOCUMENT_ROOT"];
     $games = json_decode(file_get_contents($root . "/games.json"), true);
     $themes = json_decode(file_get_contents($root."/charades/themes.json"), true);
+    $maxItems = 10;
 ?>
 <header class="header">
     <img src="../assets/bar-games-logo-2.svg" class="logo">
@@ -31,6 +32,7 @@
 
         if(isset($_GET["theme"]) && isset($_GET["start"]) && $_GET["start"] == "true"){
         ?>
+        <a href="?game=<?php echo $_GET["game"]?>">Back</a>
         <section class="timer">60</section>
         <div class=" g-3">
             <!-- draggable='true' ondragstart='drag(event)' -->
@@ -39,10 +41,11 @@
                 <?php
                     foreach($themes as $theme){
                         if($theme["theme"] == $_GET["theme"]){
-                            foreach($theme["items"] as $word){
-                                echo "<article style='z-index: ". -$word["id"] ."' class='game__item game__item--". $word["id"] ."' id='". $word["id"] ."'>";
+                            shuffle($theme["items"]);
+                            foreach(array_slice($theme["items"], 0, $maxItems) as $key=>$item){
+                                echo "<article style='z-index: ". -$key ."' class='game__item game__item--". $item["id"] ."' id='". $item["id"] ."'>";
                                 echo "<div class='game__item-success'></div>";
-                                echo "<h2 class='game__item-title'>" . $word["title"] . "</h2>";
+                                echo "<h2 class='game__item-title'>" . $item["title"] . "</h2>";
                                 echo "<div class='game__item-fail'></div>";
                                 /* echo "<p>" . $word["description"] . "</p>";
                                 if(sizeof($word["forbidden"]) > 0){

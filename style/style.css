@@ -102,10 +102,15 @@
 }
 
 .game__item{
-    background-color: #414141;
+    background-color: #313131;
+    background-image: linear-gradient(to right,
+            var(--success-color) 20%,
+            #313131 50%,
+            #313131 50%,
+            var(--danger-color) 80%);
+    background-blend-mode: color-dodge;
     position: absolute;
     border-radius: 10px;
-    padding: 15px;
     box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
     min-width: 350px;
     width: 100%;
@@ -138,12 +143,14 @@
     width: 100%;
     height: 100%;
     border: 1px solid var(--success-color);
+    border: none;
 }
 
 .game__item-fail{
     width: 100%;
     height: 100%;
     border: 1px solid var(--danger-color);
+    border: none;
 }
 
 .hide-failed{
@@ -175,6 +182,16 @@
     padding-bottom: 20px;
 }
 
+
+.success-list li:not(.failed)::before{
+    content: '✓';
+    margin-right: 10px;
+}
 .failed{
     color: var(--danger-color);
+}
+
+.failed::before{
+    content: '✖';
+    margin-right: 10px;
 }
