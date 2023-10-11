@@ -2,6 +2,7 @@
     $root = $_SERVER["DOCUMENT_ROOT"];
     $games = json_decode(file_get_contents($root . "/games.json"), true);
     $themes = json_decode(file_get_contents($root."/charades/themes.json"), true);
+    $maxItems = 10;
 ?>
 <header class="header">
     <img src="../assets/bar-games-logo-2.svg" class="logo">
@@ -41,7 +42,7 @@
                     foreach($themes as $theme){
                         if($theme["theme"] == $_GET["theme"]){
                             shuffle($theme["items"]);
-                            foreach($theme["items"] as $key=>$item){
+                            foreach(array_slice($theme["items"], 0, $maxItems) as $key=>$item){
                                 echo "<article style='z-index: ". -$key ."' class='game__item game__item--". $item["id"] ."' id='". $item["id"] ."'>";
                                 echo "<div class='game__item-success'></div>";
                                 echo "<h2 class='game__item-title'>" . $item["title"] . "</h2>";

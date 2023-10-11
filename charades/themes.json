@@ -476,14 +476,122 @@
     {
         "id": 4,
         "theme": "disney",
-        "title": "Disney og Pixar",
+        "title": "Disney",
         "description": "",
         "img": "https://via.placeholder.com/150",
         "category": "",
         "items": [
             {
                 "id": 1,
-                "title": "",
+                "title": "Walt Disney",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 2,
+                "title": "Mickey Mouse",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 3,
+                "title": "Donald Duck",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 4,
+                "title": "Bambi",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 5,
+                "title": "Snowwithe",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 6,
+                "title": "Aladdin",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 7,
+                "title": "The Lion King",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 8,
+                "title": "The Little Mermaid",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 9,
+                "title": "Mini Mouse",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 10,
+                "title": "Pluto",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 11,
+                "title": "Goofy",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 12,
+                "title": "Cinderella",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 13,
+                "title": "The Jungle Book",
                 "description": "",
                 "forbidden": [
 
@@ -502,7 +610,124 @@
         "items": [
             {
                 "id": 1,
-                "title": "",
+                "title": "Labrador",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 2,
+                "title": "Golden Retriever",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 3,
+                "title": "Får",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 4,
+                "title": "Ko",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 5,
+                "title": "Pilikan",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 6,
+                "title": "Hest",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 7,
+                "title": "Myre",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 8,
+                "title": "Løve",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 9,
+                "title": "Tiger",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 10,
+                "title": "Elefant",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 11,
+                "title": "Giraf",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 12,
+                "title": "Kamel",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 13,
+                "title": "Drommedar",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 14,
+                "title": "Krokodille",
                 "description": "",
                 "forbidden": [
 
@@ -559,7 +784,187 @@
         "items": [
             {
                 "id": 1,
-                "title": "",
+                "title": "Mercedes-Benz",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 2,
+                "title": "BMW",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 3,
+                "title": "VW",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 4,
+                "title": "Audi",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 5,
+                "title": "Opel",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 6,
+                "title": "Skoda",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 7,
+                "title": "Cubra",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 8,
+                "title": "Seat",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 9,
+                "title": "Fiat",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 10,
+                "title": "Renault",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 11,
+                "title": "Peugeot",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 12,
+                "title": "Tesla",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 13,
+                "title": "Lucid",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 14,
+                "title": "Porsche",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 15,
+                "title": "Bugatti",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 16,
+                "title": "Lamborghini",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 17,
+                "title": "Ferrari",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 18,
+                "title": "Ford",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 19,
+                "title": "Chevrolet",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 20,
+                "title": "Toyota",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 21,
+                "title": "Alfa Romeo",
                 "description": "",
                 "forbidden": [
 
@@ -578,7 +983,160 @@
         "items": [
             {
                 "id": 1,
-                "title": "",
+                "title": "Danmark",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 2,
+                "title": "Tyskland",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 3,
+                "title": "Norge",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 4,
+                "title": "Sverige",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 5,
+                "title": "Finnland",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 6,
+                "title": "Polen",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 7,
+                "title": "Spanien",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 8,
+                "title": "Frankrig",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 9,
+                "title": "England",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 10,
+                "title": "Belgien",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 11,
+                "title": "Italien",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 12,
+                "title": "Macedonien",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 13,
+                "title": "Tyrkiet",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 14,
+                "title": "Østrig",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 15,
+                "title": "Schweiz",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 16,
+                "title": "Luxemburg",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 17,
+                "title": "Vatikanstaten",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 18,
+                "title": "Ukraine",
                 "description": "",
                 "forbidden": [
 
@@ -597,7 +1155,52 @@
         "items": [
             {
                 "id": 1,
-                "title": "",
+                "title": "Gitaren",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 2,
+                "title": "Trommer",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 3,
+                "title": "Fløjte",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 4,
+                "title": "Klaver",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 5,
+                "title": "Tamboring",
+                "description": "",
+                "forbidden": [
+
+                ],
+                "link": ""
+            },
+            {
+                "id": 6,
+                "title": "Hund",
                 "description": "",
                 "forbidden": [
 
