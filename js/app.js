@@ -1,6 +1,7 @@
 const timer = document.querySelector('.timer');
 let failedItems = [];
 let successItems = [];
+let count = 60;
 // Function to update the tilt status based on device orientation
 function updateTiltStatus(event) {
     const tiltStatusElement = document.getElementById('tiltStatus');
@@ -26,7 +27,6 @@ if(new URLSearchParams(window.location.search).get("start") === 'true'){
     localStorage.removeItem('fail');
     localStorage.removeItem('success');
     console.log("Start the game");
-    let count = 60;
     interval = setInterval(function(){
         count--;
         timer.innerHTML = count;
