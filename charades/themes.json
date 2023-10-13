@@ -743,17 +743,7 @@
         "description": "",
         "img": "https://via.placeholder.com/150",
         "category": "",
-        "items": [
-            {
-                "id": 1,
-                "title": "",
-                "description": "",
-                "forbidden": [
-
-                ],
-                "link": ""
-            }
-        ]
+        "items": []
     },
     {
         "id": 7,
@@ -762,17 +752,7 @@
         "description": "",
         "img": "https://via.placeholder.com/150",
         "category": "",
-        "items": [
-            {
-                "id": 1,
-                "title": "",
-                "description": "",
-                "forbidden": [
-
-                ],
-                "link": ""
-            }
-        ]
+        "items": []
     },
     {
         "id": 8,
@@ -1279,17 +1259,7 @@
         "description": "",
         "img": "https://via.placeholder.com/150",
         "category": "",
-        "items": [
-            {
-                "id": 1,
-                "title": "",
-                "description": "",
-                "forbidden": [
-
-                ],
-                "link": ""
-            }
-        ]
+        "items": []
     },
     {
         "id": 15,

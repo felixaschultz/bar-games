@@ -22,10 +22,13 @@
         if(!isset($_GET["theme"])){
             echo "<article class='grid'>";
             foreach($themes as $theme){
-                echo "<a class='game' href='?game=".$_GET["game"]."&theme=". $theme["theme"] ."'>
+                if(sizeof($theme["items"]) > 0){
+                    echo "<a class='game' href='?game=".$_GET["game"]."&theme=". $theme["theme"] ."'>
                         <img src='".$theme["img"]."'>
                         " . $theme["title"] . "
                     </a>";
+                }
+                
             }
             "</article>";
         }
